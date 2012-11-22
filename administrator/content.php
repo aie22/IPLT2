@@ -55,7 +55,7 @@ if ($_GET['inyong']=='kabarinyong'){
         </tr>
 		<tr>
 		  <th width=120><b>IPLT</b></th>
-		  <th width=120><b>Halaman Statis</b></center></th>
+		  <th width=120><b>Ganti Pedoman/Literatur/Konsepsi</b></center></th>
 		  <th width=120><b>Cuaca</b></th>
 		  <th width=120><b>Photografer</b></th>
 		  <th width=120><b>Kategori</b></th>

@@ -4,7 +4,7 @@
 			<!-- CONTENT -->
       
 		  	
-      <div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper">
 <div id="sites-chrome-main-wrapper-inside">
 <table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
 <tr>
@@ -43,7 +43,7 @@
 <div class="sites-embed-showing-results">
                 
                     Showing posts <strong>3</strong> 
-                    <a href="http://localhost/IPLT/semua-agenda.html" dir="ltr">View more</a>
+                    <a href="/IPLT3/semua-agenda.html" dir="ltr">View more</a>
 </div>
 </div>
 </div>
@@ -95,7 +95,7 @@ By using overflow-y, we can create scroll bars when the contents of this div are
 <div class="sites-embed-showing-results">
                 
                     Showing posts <strong>1-2</strong> 
-                    <a href="http://localhost/IPLT/kategori-228-berita.html" dir="ltr">View more »</a>
+                    <a href="/IPLT3/kategori-228-berita.html" dir="ltr">View more »</a>
 </div>
 </div>
 </div>
@@ -769,8 +769,8 @@ elseif ($_GET['module']=='detailalbumpotretbanyumas'){
     $cnt++;
 
     echo "<td align=center valign=top><br />
-          <a id='galeri' href='potret_banyumas/$pb[gbr_gallery]' title='$pb[keterangan]'>
-          <img alt='galeri' src='potret_banyumas/kecil_$pb[gbr_gallery]' /></a><br />
+          <a id='gal' href='potret_banyumas/$pb[gbr_gallery]' title='$pb[keterangan]'>
+          <img alt='gal' src='potret_banyumas/kecil_$pb[gbr_gallery]' /></a><br />
           <a href=#><b>$pb[jdl_gallery]</b></a></td>";
   }
   echo "</tr></table><br />";

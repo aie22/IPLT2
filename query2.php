@@ -1,6 +1,10 @@
 <?php
-   $objConnect = mysql_connect("localhost","root","") or die(mysql_error());
-   $objDB = mysql_select_db("proyek30juta"); 
+   $server = "localhost";
+    $username = "root";
+    $password = "gisservicepower2012";
+    $database = "project_IPLT";
+    mysql_connect($server,$username,$password) or die("Koneksi gagal");
+mysql_select_db($database) or die("Database tidak bisa dibuka"); 
     //Aceh
 
    	$a2 = mysql_query("SELECT NmProp, COUNT( NmIPLT ) as jumlah

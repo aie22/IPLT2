@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 <script type="text/javascript">/* Copyright 2008 Google. */ (function() { var a=window,b="tick",c="start";var d=function(g){this.t={};this.tick=function(g,l,f){f=void 0!=f?f:(new Date).getTime();this.t[g]=[f,l]};this[b](c,null,g)},e=new d;a.jstiming={Timer:d,load:e};if(a.performance&&a.performance.timing){var h=a.performance.timing,i=a.jstiming.load,j=h.navigationStart,k=h.responseStart;0<j&&k>=j&&(i[b]("_wtsrt",void 0,j),i[b]("wtsrt_","_wtsrt",k),i[b]("tbsd_","wtsrt_"))}
@@ -38,7 +38,7 @@ d.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(14
 <script src="<?php echo "$f[folder]/js/jquery.mousewhell.js" ?>" type="text/javascript"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $("a#galeri").fancybox({
+      $("a#gal").fancybox({
         'titlePosition' : 'inside'
       });
     });
@@ -115,10 +115,16 @@ var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ag
                 window.jstiming.load.tick('cl');
               </script>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 <script>
   // ketika halaman pertama kali diload, maka akan memanggil file data_barang.php dan dimasukkan pada div id='data'
   $(document).ready(function(){
-    $("#data").load("http://localhost/IPLT/view.php");
+    $("#data").load("/IPLT3/view.php");
   });
 </script>
 </head>
@@ -140,7 +146,7 @@ var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ag
 </tr>
 <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
 <td colspan="2" id="sites-chrome-header-horizontal-nav-container">
-<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/index.php">Beranda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/semua-agenda.html">Agenda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/kategori-228-berita.html">Berita</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/index2.html">IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/statis-11-regulasipedoman.html">Regulasi/Pedoman</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/progress-pemb-iplt">Pembangunan IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/semua-album.html">Gallery</a></li><li class="unselected sites-header-nav-dropdown"><a class="sites-navigation-link unselected" >Literatur IPLT</a><div class="sites-header-nav-dropdown-menu" style="display:none"><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/statis-9-konsepsiiplt.html">konsepsi IPLT</a></div><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/statis-10-literaturteknisiplt.html">literatur teknis IPLT</a></div></div></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/kontak">Hubungi kami</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/system/app/pages/sitemap/hierarchy">Sitemap</a></li></ul><div style="clear: both;"></div></div>
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/index.php">Beranda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/semua-agenda.html">Agenda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/kategori-228-berita.html">Berita</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/index2.html">IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/statis-11-regulasipedoman.html">Regulasi/Pedoman</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/progress-pemb-iplt">Pembangunan IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/semua-album.html">Gallery</a></li><li class="unselected sites-header-nav-dropdown"><a class="sites-navigation-link unselected" >Literatur IPLT</a><div class="sites-header-nav-dropdown-menu" style="display:none"><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="/IPLT3/statis-9-konsepsiiplt.html">konsepsi IPLT</a></div><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="/IPLT3/statis-10-literaturteknisiplt.html">literatur teknis IPLT</a></div></div></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/kontak">Hubungi kami</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/system/app/pages/sitemap/hierarchy">Sitemap</a></li></ul><div style="clear: both;"></div></div>
 </td>
 </tr>
 </table> 

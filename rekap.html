@@ -83,7 +83,7 @@ var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ag
 (function(){
 var name = document.getElementById("name") || document.getElementById("full_name");
 var frame = document.getElementById("data");
-var url = "http://localhost/IPLT/rekapitulasi-kondisi-iplt.php";
+var url = "/IPLT3/rekapitulasi-kondisi-iplt.php";
 if (name != null)
 {
 if (typeof(name.value) == "string")
@@ -102,31 +102,31 @@ frame.src=url;
 <script>
   // ketika halaman pertama kali diload, maka akan memanggil file data_barang.php dan dimasukkan pada div id='data'
   $(document).ready(function(){
-    $("#data1").load("http://localhost/IPLT/rekapitulasi-kondisi-iplt.php");
+    $("#data1").load("/IPLT3/rekapitulasi-kondisi-iplt.php");
   });
 </script>
 <script>
   // ketika halaman pertama kali diload, maka akan memanggil file data_barang.php dan dimasukkan pada div id='data'
   $(document).ready(function(){
-    $("#data2").load("http://localhost/IPLT/crosstabkondopfisik.php");
+    $("#data2").load("/IPLT3/crosstabkondopfisik.php");
   });
 </script>
 <script>
   // ketika halaman pertama kali diload, maka akan memanggil file data_barang.php dan dimasukkan pada div id='data'
   $(document).ready(function(){
-    $("#data3").load("http://localhost/IPLT/kondisi-operasi.php");
+    $("#data3").load("/IPLT3/kondisi-operasi.php");
   });
 </script>
 <script>
   // ketika halaman pertama kali diload, maka akan memanggil file data_barang.php dan dimasukkan pada div id='data'
   $(document).ready(function(){
-    $("#data4").load("http://localhost/IPLT/vol.php");
+    $("#data4").load("/IPLT3/vol.php");
   });
 </script>
 <script>
   // ketika halaman pertama kali diload, maka akan memanggil file data_barang.php dan dimasukkan pada div id='data'
   $(document).ready(function(){
-    $("#data5").load("http://localhost/IPLT/rekapsumberdana.php");
+    $("#data5").load("/IPLT3/rekapsumberdana.php");
   });
 </script>
 </head>
@@ -147,7 +147,7 @@ frame.src=url;
 </tr>
 <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
 <td colspan="2" id="sites-chrome-header-horizontal-nav-container">
-<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/index.php">Beranda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/semua-agenda.html">Agenda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/kategori-228-berita.html">Berita</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/index2.html">IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/statis-11-regulasipedoman.html">Regulasi/Pedoman</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/progress-pemb-iplt">Pembangunan IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/semua-album.html">Gallery</a></li><li class="unselected sites-header-nav-dropdown"><a class="sites-navigation-link unselected" >Literatur IPLT</a><div class="sites-header-nav-dropdown-menu" style="display:none"><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/statis-9-konsepsiiplt.html">konsepsi IPLT</a></div><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="http://localhost/IPLT/statis-10-literaturteknisiplt.html">literatur teknis IPLT</a></div></div></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/kontak">Hubungi kami</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/system/app/pages/sitemap/hierarchy">Sitemap</a></li></ul><div style="clear: both;"></div></div>
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/index.php">Beranda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/semua-agenda.html">Agenda</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/kategori-228-berita.html">Berita</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/index2.html">IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/statis-11-regulasipedoman.html">Regulasi/Pedoman</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/progress-pemb-iplt">Pembangunan IPLT</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/IPLT3/semua-album.html">Gallery</a></li><li class="unselected sites-header-nav-dropdown"><a class="sites-navigation-link unselected" >Literatur IPLT</a><div class="sites-header-nav-dropdown-menu" style="display:none"><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="/IPLT3/statis-9-konsepsiiplt.html">konsepsi IPLT</a></div><div class="sites-header-nav-dropdown-menuitem unselected"><a class="sites-navigation-link unselected" href="/IPLT3/statis-10-literaturteknisiplt.html">literatur teknis IPLT</a></div></div></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/kontak">Hubungi kami</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/site/ipltpplp/system/app/pages/sitemap/hierarchy">Sitemap</a></li></ul><div style="clear: both;"></div></div>
 </td>
 </tr>
 </table> 
@@ -169,11 +169,11 @@ frame.src=url;
 </h3>
 <div id="sites-canvas-main" class="sites-canvas-main">
 <div id="sites-canvas-main-content">
-<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe  src ="http://localhost/IPLT/rekapitulasi-kondisi-iplt.php "width="100%" height="950" frameborder="0" id="data" scrolling ="no"></iframe></div></div></div>
-<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe id="data2" src=" http://localhost/IPLT/crosstabkondopfisik.php"width="100%" height="1100" frameborder="0" id="816004905"></iframe></div></div></div>
-<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe src="http://localhost/IPLT/kondisi-operasi.php" width="100%" height="900" frameborder="0" id="144047760"></iframe></div></div></div>
-<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe src="http://localhost/IPLT/vol.php" width="100%" height="1400" frameborder="0" id="1707893290"></iframe></div></div></div>
-<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe src="http://localhost/IPLT/rekapsumberdana.php" width="100%" height="370" frameborder="0" id="438557338"></iframe></div></div></div>
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe  src ="/IPLT3/rekapitulasi-kondisi-iplt.php "width="100%" height="950" frameborder="0" id="data" scrolling ="no"></iframe></div></div></div>
+<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe id="data2" src=" /IPLT3/crosstabkondopfisik.php"width="100%" height="1100" frameborder="0" id="816004905"></iframe></div></div></div>
+<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe src="/IPLT3/kondisi-operasi.php" width="100%" height="900" frameborder="0" id="144047760"></iframe></div></div></div>
+<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe src="/IPLT3/vol.php" width="100%" height="1400" frameborder="0" id="1707893290"></iframe></div></div></div>
+<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-spreadsheet"><iframe src="/IPLT3/rekapsumberdana.php" width="100%" height="370" frameborder="0" id="438557338"></iframe></div></div></div>
 </div></td></tr></tbody></table>
 </div> 
 </div> 

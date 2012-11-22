@@ -9,7 +9,7 @@ else{
 
 $aksi="modul/mod_iplt/aksi_iplt.php";
 switch($_GET[act]){
-  // Tampil Berita
+  // Tampil IPLT
   default:
     echo "<h2>IPLT</h2>
           <form method=get action='$_SERVER[PHP_SELF]'>
@@ -345,13 +345,6 @@ switch($_GET[act]){
     echo "<tr><td width=70>Jumlah Truk Swasta</td>     <td> : <input type=text name='TrkSwasta' size=10 value='$r[TrkSwasta]'></td></tr>";
     echo "<tr><td width=70>Rata-rata Rit per Hari</td>     <td> : <input type=text name='RitPHrTrkSwasta' size=10 value='$r[RitPHrTrkSwasta]'></td></tr>";
     echo "<tr><td width=70>Kapasitas (m3)</td>     <td> : <input type=text name='KapTrkSwasta' size=10 value='$r[KapTrkSwasta]'></td></tr>";
-      echo "
-          <tr><td>Foto Kondisi IPLT</td>       <td> :  ";
-          if ($r[GaleriFoto]!=''){
-              echo "<img src='../foto_iplt/small_$r[GaleriFoto]'>";
-              echo "<img src='../foto_iplt/small_$r[GaleriFoto2]'>";
-              echo "<img src='../foto_iplt/small_$r[GaleriFoto3]'>";  
-          }
     echo "</td></tr>
           <tr><td>Ganti Foto IPLT</td>    <td> : <input type=file name='fupload' size=30> *)</td></tr>
           <tr><td>Ganti Foto IPLT 2</td>    <td> : <input type=file name='fupload' size=30> *)</td></tr>

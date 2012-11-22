@@ -141,9 +141,24 @@ elseif ($inyong=='iplt' AND $act=='update'){
 
   // Apabila gambar tidak diganti
   if (empty($lokasi_file)){
-    mysql_query("UPDATE halamanstatis SET judul       = '$_POST[judul]',
-                                          isi_halaman = '$_POST[isi_halaman]'
-                                    WHERE id_halaman  = '$_POST[id]'");
+    mysql_query("UPDATE DaftIPLT SET 
+                                    KdIdIPLT = '$_POST[KdIdIPLT]',
+                                    NmIPLT   = '$_POST[NmIPLT]',
+                                    tema_seo = '$_POST[tema_seo]',
+                                    KdKab    = '$_POST[KdKab]',
+                                    ThnBang  = '$_POST[ThnBang]',
+                                    SDanaPemb = '$_POST[SDanaPemb]',
+                                    TekOlah = '$_POST[TekOlah]',
+                                    Pengelola = '$_POST[Pengelola]',
+                                    KondFskIPLT = '$_POST[KondFskIPLT]',
+                                    KondOpIPLT = '$_POST[KondOpIPLT]',
+                                    TrkPemda = '$_POST[TrkPemda]',
+                                    RitPHrTrkPemda = '$_POST[RitPHrTrkPemda]',
+                                    KapTrkPemda = '$_POST[KapTrkPemda]',
+                                    TrkSwasta = '$_POST[TrkSwasta]',
+                                    RitPHrTrkSwasta = '$_POST[RitPHrTrkSwasta]',
+                                    KapTrkSwasta = '$_POST[KapTrkSwasta]' 
+                                    WHERE id  = '$_POST[id]' ");
   header('location:../../media.php?inyong='.$inyong);
   }
   else{
@@ -152,11 +167,38 @@ elseif ($inyong=='iplt' AND $act=='update'){
         window.location=('../../media.php?inyong=banner')</script>";
     }
     else{  
-    UploadBanner($nama_file);
-    mysql_query("UPDATE halamanstatis SET judul       = '$_POST[judul]',
-                                          isi_halaman = '$_POST[isi_halaman]',
-                                          gambar      = '$nama_file'   
-                                    WHERE id_halaman  = '$_POST[id]'");
+    UploadIPLT($nama_file);
+    mysql_query("UPDATE DaftIPLT        SET 
+                                        KdIdIPLT = '$_POST[KdIdIPLT]',
+                                        NmIPLT   = '$_POST[NmIPLT]',
+                                        tema_seo = '$_POST[tema_seo]',
+                                        KdKab    = '$_POST[KdKab]',
+                                        ThnBang  = '$_POST[ThnBang]',
+                                        SDanaPemb = '$_POST[SDanaPemb]',
+                                        TekOlah = '$_POST[TekOlah]',
+                                        Pengelola = '$_POST[Pengelola]',
+                                        KondFskIPLT = '$_POST[KondFskIPLT]',
+                                        KondOpIPLT = '$_POST[KondOpIPLT]',
+                                        TrkPemda = '$_POST[TrkPemda]',
+                                        RitPHrTrkPemda = '$_POST[RitPHrTrkPemda]',
+                                        KapTrkPemda = '$_POST[KapTrkPemda]',
+                                        TrkSwasta = '$_POST[TrkSwasta]',
+                                        RitPHrTrkSwasta = '$_POST[RitPHrTrkSwasta]',
+                                        KapTrkSwasta = '$_POST[KapTrkSwasta]',
+                                        PetaLokasi = '$namafile',
+                                        GaleriFoto = '$namafile2',
+                                        GaleriFoto2 = '$namafile3',
+                                        GaleriFoto3 = '$namafile4',
+                                        GaleriFoto4 = '$namafile5',
+                                        GaleriFoto5 = '$namafile6',
+                                        GaleriFoto6 = '$namafile7',
+                                        GaleriFoto7 = '$namafile8',
+                                        GaleriFoto8 = '$namafile9',
+                                        GaleriFoto9 = '$namafile10',
+                                        GaleriFoto10 = '$namafile11',
+                                        PetaLokasi2 = '$namafile12',
+                                        LapSurveyKons = '$namafile13'
+                                    WHERE id  = '$_POST[id]' ");
   header('location:../../media.php?inyong='.$inyong);
   }
   }

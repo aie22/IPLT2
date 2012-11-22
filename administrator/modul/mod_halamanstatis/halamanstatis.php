@@ -10,8 +10,8 @@ $aksi="modul/mod_halamanstatis/aksi_halamanstatis.php";
 switch($_GET[act]){
   // Tampil Halaman Statis
   default:
-    echo "<h2>Halaman Statis</h2>
-          <input type=button value='Tambah Halaman Statis' onclick=\"window.location.href='?inyong=halamanstatis&act=tambahhalamanstatis';\">
+    echo "<h2>Ganti Pedoman/Literatur/Konsepsi</h2>
+          <input type=button value='Tambah Pedoman/Literatur/Konsepsi' onclick=\"window.location.href='?inyong=halamanstatis&act=tambahhalamanstatis';\">
           <table>
           <tr><th>no</th><th>judul</th><th>tgl. posting</th><th>aksi</th></tr>";
 
@@ -32,7 +32,7 @@ switch($_GET[act]){
     break;
 
   case "tambahhalamanstatis":
-    echo "<h2>Tambah Halaman Statis</h2>
+    echo "<h2>Tambah Pedoman/Literatur/Konsepsi</h2>
           <form method=POST action='$aksi?inyong=halamanstatis&act=input' enctype='multipart/form-data'>
           <table>
           <tr><td width=70>Judul</td>     <td> : <input type=text name='judul' size=60></td></tr>

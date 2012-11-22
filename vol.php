@@ -3,8 +3,12 @@
    //header("Content-type: text/css");
    //include "query.php";
    include "td5.html";
-   $objConnect = mysql_connect("localhost","root","") or die(mysql_error());
-   $objDB = mysql_select_db("proyek30juta"); 
+   $server = "localhost";
+   $username = "root";
+   $password = "gisservicepower2012";
+   $database = "project_IPLT";
+   mysql_connect($server,$username,$password) or die("Koneksi gagal");
+mysql_select_db($database) or die("Database tidak bisa dibuka");  
 
    $tampil2 = mysql_query("SELECT  format((
 			((`TrkPemda` * `RitPHrTrkPemda`) + ( `TrkSwasta` * `RitPHrTrkSwasta` ) )),2) AS vol, count( * ) AS jml FROM DaftIPLT GROUP BY vol
